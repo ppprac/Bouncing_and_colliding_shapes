@@ -5,7 +5,7 @@ function setup()
   createCanvas(800,400);
  rect1 =  createSprite(400, 200, 50, 50);
  rect2 = createSprite(100,200, 80, 80)
- rect1.shapeColor="green";
+ rect1.shapeColor="yellow";
  rect2.shapeColor="green";
  rect1.debug=true;
  rect2.debug=true;
