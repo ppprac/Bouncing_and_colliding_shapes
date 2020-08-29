@@ -23,8 +23,8 @@ function draw()
   }
   else
   {
-    movingRect.shapeColor = "green";
-    fixedRect.shapeColor = 'green';
+    rect1.shapeColor = "green";
+    rect2.shapeColor = 'green';
   }
   if(rect2.y - rect1.y < rect2.height/2 + rect1.height/2 && rect1.y - rect2.y < rect2.height/2 + rect1.height/2) 
   {
@@ -33,8 +33,8 @@ function draw()
   }
   else
   {
-    movingRect.shapeColor = "green";
-    fixedRect.shapeColor = 'green';
+    rect1.shapeColor = "green";
+    rect2.shapeColor = 'green';
   }
   drawSprites();
 }
