@@ -14,8 +14,8 @@ function setup()
 function draw() 
 {
   background(255,255,255);  
-  rect2.x=world.mouseX;
-  rect2.y=world.mouseY;
+  rect2.x=World.mouseX;
+  rect2.y=World.mouseY;
   if(rect2.x - rect1.x < rect2.width/2 + rect1.width/2 && rect1.x - rect2.x < rect2.width/2 + rect1.width/2)
   {
     rect1.shapeColor="red";
