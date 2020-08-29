@@ -1,2 +1,2 @@
-# Bouncing_and_colliding_shapes
-Boucing and colliding algorithm using Visual Studio
+# p5.play-boilerplate
+Boiler plate for p5.play
