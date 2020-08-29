@@ -16,7 +16,7 @@ function draw()
   background(255,255,255);  
   rect2.x=world.mouseX;
   rect2.y=world.mouseY;
-  if(rect2.x - rect1.x < rect2.width/2 + rect1.width/2 && rect1.x - rect2.x < rect2.width/2 + rect1.width/2)
+  /*if(rect2.x - rect1.x < rect2.width/2 + rect1.width/2 && rect1.x - rect2.x < rect2.width/2 + rect1.width/2)
   {
     rect1.shapeColor="red";
     rect2.shapeColor="red";
@@ -26,6 +26,6 @@ function draw()
   {
     rect1.shapeColor="red";
     rect2.shapeColor="red";
-  }
+  }*/
   drawSprites();
 }
