@@ -1,24 +1,35 @@
-var fixedRect, movingRect;
+var rect1, rect2;
 
-function setup() {
+function setup() 
+{
   createCanvas(800,400);
-  movingRect = createSprite(400, 200, 80, 30);
-  movingRect.shapeColor = "green";
-  movingRect.debug = true;
-  fixedRect = createSprite(200,200,50,80);
-  fixedRect.shapeColor = "green";
-  fixedRect.debug = true;
+ rect1 =  createSprite(400, 200, 50, 80);
+ rect2 = createSprite(0,0, 80, 50)
+ rect1.shapeColor="green";
+ rect2.shapeColor="green";
+ rect1.debug=true;
+ rect2.debug=true;
 }
 
-function draw() {
+function draw() 
+{
   background(255,255,255);  
-  movingRect.x = World.mouseX;
-  movingRect.y = World.mouseY;
-
-  if(movingRect.x -fixedRect.x < fixedRect.width/2 + movingRect.width/2)
+  rect2.x=world.mouseX;
+  rect2.y=world.mouseY;
+  if(rect2.x - rect1.x < rect2.width/2 + rect1.width/2 && rect1.x - rect2.x < rect2.width/2 + rect1.width/2)
   {
-    movingRect.shapeColor = "red";
-    fixedRect.shapeColor = 'red';
+    rect1.shapeColor="red";
+    rect2.shapeColor="red";
+  }
+  else
+  {
+    movingRect.shapeColor = "green";
+    fixedRect.shapeColor = 'green';
+  }
+  if(rect2.y - rect1.y < rect2.height/2 + rect1.height/2 && rect1.y - rect2.y < rect2.height/2 + rect1.height/2) 
+  {
+    rect1.shapeColor="red";
+    rect2.shapeColor="red";
   }
   else
   {
